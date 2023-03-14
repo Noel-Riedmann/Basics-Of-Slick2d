@@ -3,7 +3,9 @@ package at.riedmann.games.analyze;
 import org.newdawn.slick.Graphics;
 
 public class Rectangle {
-    private enum DIRECTION {RIGHT, DOWN, LEFT, UP};
+    private enum DIRECTION {RIGHT, DOWN, LEFT, UP}
+
+    ;
     private float x;
     private float y;
     private float speed;
@@ -15,10 +17,10 @@ public class Rectangle {
     }
 
     public void render(Graphics graphics) {
-        graphics.drawRect(this.x, this.y, 100,100);
+        graphics.drawRect(this.x, this.y, 100, 100);
     }
 
-    public void update(int delta){
-        this.x += (float) delta/this.speed;
+    public void update(int delta) {
+        this.x += (float) delta / this.speed;
     }
 }
